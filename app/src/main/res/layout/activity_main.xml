@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.tusharmalik.technoglobe.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Login"
+            android:gravity="center"
+            android:textColor="@color/lightGreen"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:paddingTop="10dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="20dp"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+            <EditText
+                android:id="@+id/edMobNum2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Registered Mobile Number(with +91)"
+                android:inputType="textEmailAddress"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+            <EditText
+                android:id="@+id/edmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Registered Email Address"
+                android:textSize="20dp"
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/lightGreen"
+            android:hint="Password"
+            android:paddingLeft="20dp">
+            <EditText
+                android:id="@+id/edPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_login"
+            android:text="Login Securely"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
+            <View
+                android:layout_width="140dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:layout_margin="12dp"/>
+
+            <View
+                android:layout_width="140dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="#c0c0c0"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCreate2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_create"
+            android:text="Create New Account"
+            android:textColor="@color/lightGreen"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</ScrollView>
+
