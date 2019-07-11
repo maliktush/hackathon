@@ -12,21 +12,34 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
 import java.util.Locale;
 
+import static android.view.View.VISIBLE;
+
 public class Home extends AppCompatActivity  implements LocationListener {
     TextView hellotext;
-    TextView locationText;
+    TextView locationText,weatherText;
     LocationManager locationManager;
+    Button getweather;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         hellotext=findViewById(R.id.hellotext);
+        getweather=findViewById(R.id.getweather);
+        weatherText=findViewById(R.id.weather);
+        getweather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                weatherText.setVisibility(View.VISIBLE);
+            }
+        });
         Intent intent = getIntent();
         //String hello = intent.getExtras().getString("epuzzle");
         hellotext.setText("hello Tushar!");
@@ -38,6 +51,7 @@ public class Home extends AppCompatActivity  implements LocationListener {
         }
         getLocation();
     }
+
     void getLocation() {
         try {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);

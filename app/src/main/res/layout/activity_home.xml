@@ -21,11 +21,38 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/hellotext"
         android:padding="10dp"
-        android:text="Sample location"
+        android:text="Latitude:12.908
+Longitude:77.684
+30,Junnasandra,Rainbow Drive,
+Halanayakanahalli,Bengaluru,Karnataka
+560035,India"
         android:textSize="20dp"
         android:textColor="@color/lightGreen"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="88dp"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/getweather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/locationText"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/lightGreen"
+        android:text="Get weateher info" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/getweather"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:text="Sunny Weather,Go for a walk"
+        android:visibility="invisible"
+        android:textColor="@color/lightGreen"
+        android:id="@+id/weather"/>
 
 </RelativeLayout>
